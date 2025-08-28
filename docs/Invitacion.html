@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación XV Años</title>
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+    body {
+      color: #fff;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      overflow-x:hidden;
+    }
+    @keyframes gradientBG {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    h1, h2 {
+      font-family: 'Georgia', serif;
+      color: gold;
+      text-shadow:0 0 10px rgba(255,215,0,0.8);
+    }
+    header {
+      text-align:center;
+      padding:120px 20px;
+    }
+    header h1 {
+      font-size:3.5rem;
+      animation: fadeInDown 2s ease;
+    }
+    header h2 {
+      font-size:1.5rem;
+      margin-top:15px;
+      animation: fadeInUp 2s ease;
+    }
+    section {
+      padding:80px 20px;
+      text-align:center;
+    }
+    section h2 {
+      font-size:2.2rem;
+      margin-bottom:30px;
+      border-bottom:2px solid gold;
+      display:inline-block;
+      padding-bottom:10px;
+    }
+    .box {
+      background: rgba(20,20,20,0.8);
+      border: 1px solid gold;
+      border-radius:20px;
+      padding:40px;
+      margin:40px auto;
+      max-width:900px;
+      box-shadow:0 0 30px rgba(255,215,0,0.3);
+      transform: translateY(50px);
+      opacity:0;
+      transition: all 1s ease;
+    }
+    .box.visible {
+      transform: translateY(0);
+      opacity:1;
+    }
+    /* Botones dorados */
+    .btn {
+      display:inline-block;
+      background: gold;
+      color: black;
+      padding: 12px 25px;
+      margin:15px;
+      border-radius:30px;
+      font-size:1.1rem;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 0 15px rgba(255,215,0,0.7);
+      transition:0.3s;
+    }
+    .btn:hover {
+      background:#fff;
+      color:#000;
+      transform:scale(1.05);
+      box-shadow:0 0 25px gold;
+    }
+    /* Galería */
+    .galeria {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+    }
+    .galeria img {
+      width:100%;
+      border-radius:15px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.6);
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.1) rotate(2deg);
+      filter: brightness(1.2);
+    }
+    /* Carrusel */
+    .carrusel {
+      position:relative;
+      width:90%;
+      max-width:800px;
+      margin: 0 auto 60px auto;
+      overflow:hidden;
+      border-radius:20px;
+      box-shadow:0 0 20px rgba(255,215,0,0.6);
+    }
+    .carrusel img {
+      width:100%;
+      display:none;
+      border-radius:20px;
+    }
+    .carrusel img.active {
+      display:block;
+      animation: fadeIn 2s ease;
+    }
+    /* Contador */
+    .contador {
+      font-size:1.8rem;
+      margin-top:20px;
+      font-weight:bold;
+      color: gold;
+      text-shadow:0 0 15px black;
+    }
+    /* Footer */
+    footer {
+      text-align:center;
+      padding:40px;
+      background:rgba(0,0,0,0.85);
+      font-size:1rem;
+      border-top:2px solid gold;
+    }
+    /* Animaciones */
+    @keyframes fadeInDown {from{opacity:0;transform:translateY(-50px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeInUp {from{opacity:0;transform:translateY(50px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeIn {from{opacity:0;}to{opacity:1;}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mis XV Años</h1>
+    <h2>¡Te invito a celebrar conmigo una noche mágica! ✨</h2>
+    <div class="contador" id="contador"></div>
+    <button class="btn" id="musicaBtn">🎵 Música</button>
+  </header>
+
+  <section class="box" id="padres">
+    <h2>Mis Padres</h2>
+    <p><strong>Juan Pérez</strong> y <strong>María López</strong></p>
+  </section>
+
+  <section class="box" id="padrinos">
+    <h2>Mis Padrinos</h2>
+    <p><strong>Carlos García</strong> y <strong>Ana Torres</strong></p>
+  </section>
+
+  <section>
+    <h2>Recuerdos</h2>
+    <div class="carrusel">
+      <img src="foto1.jpg" class="active" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+    </div>
+  </section>
+
+  <section class="box">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="foto4.jpg" alt="Foto 4">
+      <img src="foto5.jpg" alt="Foto 5">
+      <img src="foto6.jpg" alt="Foto 6">
+      <img src="foto7.jpg" alt="Foto 7">
+    </div>
+  </section>
+
+  <section class="box">
+    <h2>Mesa de Regalos 🎁</h2>
+    <p>Tu presencia es el mejor regalo, pero si deseas obsequiar algo, aquí está mi mesa de regalos:</p>
+    <a href="https://www.amazon.com.mx" target="_blank" class="btn">🎁 Ir a la mesa de regalos</a>
+  </section>
+
+  <section class="box">
+    <h2>Ubicación ⛪🎉</h2>
+    <p><strong>Misa en la Iglesia:</strong></p>
+    <p>Iglesia de San José, Calle Principal #123</p>
+    <a href="https://maps.google.com?q=Iglesia+San+Jose" target="_blank" class="btn">📍 Ver Iglesia</a>
+    <br><br>
+    <p><strong>Recepción en el Salón:</strong></p>
+    <p>Salón Real Dorado, Av. Fiesta #456</p>
+    <a href="https://maps.google.com?q=Salon+Real+Dorado" target="_blank" class="btn">📍 Ver Salón</a>
+  </section>
+
+  <footer>
+    <p>Con mucho cariño, espero contar con tu presencia en este día tan especial 💖</p>
+  </footer>
+
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // ===== CONTADOR =====
+    const evento = new Date("2025-12-20 20:00:00").getTime();
+    const contador = document.getElementById("contador");
+    setInterval(()=>{
+      const ahora = new Date().getTime();
+      const diferencia = evento - ahora;
+      const dias = Math.floor(diferencia/(1000*60*60*24));
+      const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
+      const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
+      const segundos = Math.floor((diferencia%(1000*60))/1000);
+      contador.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+    },1000);
+
+    // ===== ANIMACIONES SCROLL =====
+    const boxes = document.querySelectorAll(".box");
+    window.addEventListener("scroll",()=>{
+      const trigger = window.innerHeight*0.85;
+      boxes.forEach(box=>{
+        const top = box.getBoundingClientRect().top;
+        if(top<trigger) box.classList.add("visible");
+      });
+    });
+
+    // ===== CARRUSEL =====
+    const slides = document.querySelectorAll(".carrusel img");
+    let index=0;
+    setInterval(()=>{
+      slides[index].classList.remove("active");
+      index=(index+1)%slides.length;
+      slides[index].classList.add("active");
+    },4000);
+
+    // ===== MÚSICA =====
+    const musica = document.getElementById("musica");
+    const musicaBtn = document.getElementById("musicaBtn");
+    let playing=false;
+    musicaBtn.addEventListener("click",()=>{
+      playing? musica.pause(): musica.play();
+      playing=!playing;
+      musicaBtn.textContent= playing ? "⏸️ Pausar Música":"🎵 Música";
+    });
+  </script>
+</body>
+</html>
