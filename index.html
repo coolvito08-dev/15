@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis XV Años - pamela del carmen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            color: white;
+            background: url("https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/498030656_122203832162253794_2025221531532244229_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nw-z19aZusIQ7kNvwHEcikR&_nc_oc=AdmCg8Ys31gWzZhLgCppSvIY4vYdHyNlFKNCmGTLO51xXIY8NEKwoyav0y5YUnytETW-8AoWTb6HQapeNdLv4moS&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=K9mjITAjIwECURwZVBpuXQ&oh=00_AfaqW_JeZ2zdp1uc8BJgUMxr0cEAghxrFoqDWpQClr5TcA&oe=68E3AC10") no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+        
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1,
+        h2 {
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            background: #e91e63;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #c2185b;
+        }
+        /* Sección padres/padrinos */
+        
+        .family-section {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        
+        .family-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            width: 200px;
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        /* Mesa de regalos */
+        
+        .gifts {
+            margin: 50px auto;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+        }
+        
+        .gifts h2 {
+            margin-bottom: 20px;
+        }
+        /* Galería */
+        
+        .gallery {
+            margin: 20px auto;
+            max-width: 50%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .gallery img {
+            width: 100%;
+            display: none;
+        }
+        
+        .gallery img.active {
+            display: block;
+            animation: fadeInImg 1s ease;
+        }
+        
+        @keyframes fadeInImg {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Mis XV Años</h1>
+        <h2>pamela del carmen</h2>
+
+        <p>📍 maya real, chetumal <br> 📅 15 de Noviembre 2025 - 7:00 PM</p>
+        <a class="btn" href="https://wa.me/529838677701?text=Confirmo%20mi%20asistencia%20a%20tus%20XV%20años" target="_blank">Confirmar Asistencia</a>
+
+        <!-- Galería -->
+        <div class="gallery" id="gallery">
+            <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/468794680_122170768250253794_108199848621095543_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=oI-8owQw20AQ7kNvwHmHZry&_nc_oc=Adl-KbfpyUyN0JPH1Axlu3qLj-JYUXRdc4FJxsF2u-vHuY5f18mURUONsHiVDdeLAC3OylPX5eoaxhianLI2mcep&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=c7k6he4-CA77x1LI-11d0A&oh=00_AfZ8-XSd9rACW-98JE-z4h9MZ5aRt1WxHHc6dFpI8sTNgw&oe=68E3A469"
+                class="active" alt="Foto 1">
+            <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/498679200_122203832294253794_1337273343356983612_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iB4HpiiAbvMQ7kNvwH70zpc&_nc_oc=AdkljkHpi6n_YtnM2H0T4YF26idjkYq3xGBG7RbrBb4HA01f-7y4PfoxGMPDx9XxTN5jxwUamFUEddCNhcSC3HNn&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=p1GONPMSn5kjVdtyl3VpHQ&oh=00_AfYoQqnBpPfXa0jjY8mxyJJFheOI4nqs6ojZ4wUjpewi8w&oe=68E3A19D"
+                alt="Foto 2">
+            <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/490147424_122196772250253794_427947391899553901_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6W-BKooWutAQ7kNvwFJVJaT&_nc_oc=AdnQ1l1uaKbCZISV96BOX2FVNblnhn53Rjpz0iWNXWXGq_oAS6ToxxtwAJlHDYCB1yjlSo9rBsn3np0hJEBSepDT&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=X8ygBvwl3jJaaYif7qfDRA&oh=00_AfZU-mz9QuSe4MT_npW-3dXPcz4hjMSyGn9g_KnW5fjt_w&oe=68E39156"
+                alt="Foto 3">
+            <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/498030656_122203832162253794_2025221531532244229_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nw-z19aZusIQ7kNvwHEcikR&_nc_oc=AdmCg8Ys31gWzZhLgCppSvIY4vYdHyNlFKNCmGTLO51xXIY8NEKwoyav0y5YUnytETW-8AoWTb6HQapeNdLv4moS&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=K9mjITAjIwECURwZVBpuXQ&oh=00_AfaqW_JeZ2zdp1uc8BJgUMxr0cEAghxrFoqDWpQClr5TcA&oe=68E3AC10"
+                alt="Foto 4">
+            <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/482268252_122188091756253794_4299841187147124149_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=62TCps6awU4Q7kNvwG8PFs1&_nc_oc=AdnoTyFo-10l4qE9h7e0jEIBCFybELl_ZV17Z5INMz7RnrY9DjzId0xJKk1jZbSNIfLCoMm7QWLkeru1m-bVBggB&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=BiSUVLg4vYUvxJdagGjUtg&oh=00_Afb7qI21ffd4UZO6GidZSyeUzrYX98pjX9eKZ-kbPCZpDQ&oe=68E381F9"
+                alt="Foto 5">
+        </div>
+
+        <!-- Sección padres y padrinos -->
+        <div class="family-section">
+            <h2>Con la bendición de mis padres</h2>
+            <div class="family-cards">
+                <div class="card">
+                    <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/426621109_122103985292205745_2639178136090251389_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=cCPIy6G8Ju8Q7kNvwFveD8Q&_nc_oc=AdnbO9_he7CR3EBcOAE_AbIU6fdQkZ18_TM2_rs9vGmR6jjA8ztwE98NvQp3YPpaiLpprefSMsM1vlShYK3HC6IS&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=uLEvBzvwi0laBhSXiuLwng&oh=00_AfaRf3oq7G3_dkyfvbPNdvXW-4YdCJ48mZOcNvmOloQ_Fg&oe=68E39BB5"
+                        alt="Papá">
+                    <p>Papá: Juan Pérez</p>
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/425787354_122093208026218084_7540793015655680348_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=T7lQrkkvbBgQ7kNvwF2l7Bk&_nc_oc=Adm_Y0d_0-hIRN6gt94C5cjkk-J6cz-XJLPlCEcpLxF1D8sE9zGbUoLXZdiEvoKrYmZ2vLw8VPtvnFCwF26G1XK1&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=Nt_NVNW5uOfNfkYZ5SNI5w&oh=00_AfbWTFE1o4E1SeDFbbBXSHXceu_ogHzvTmxsxDYS1vQXLw&oe=68E3A977"
+                        alt="Mamá">
+                    <p>Mamá: María López</p>
+                </div>
+            </div>
+            <h2>Y el apoyo de mis padrinos</h2>
+            <div class="family-cards">
+                <div class="card">
+                    <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/480537885_122186129450253794_8537919187889123621_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=csCut-7hADMQ7kNvwGj1qFw&_nc_oc=AdkslUrRByl8xpfqvrhlMshiYCdjlT5X1fWWVJWTB65daIFaY4twCuJNHfbqGDdPapDj5iq8CIFtGK26aJHfWvGR&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=azeHbf0NwUFpANqzOpjq2w&oh=00_AfbXaZLVZ4-KfzqAnfk9YyUlhcJcpQIGXo71zS4tKvbSnw&oe=68E38080"
+                        alt="Padrino">
+                    <p>Padrino: Carlos Gómez</p>
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/480811626_122186128682253794_721926681953353476_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HPwF_RWGRvwQ7kNvwGzx4oF&_nc_oc=AdmlXFTdHMw1Kd-hURyH3bVeZsvvOaduCWyd1GT0Xl6KUI_NcVmnEpJGEz1Qo08Gpy-SPemHZgYRmKWg92qo2uJs&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=azeHbf0NwUFpANqzOpjq2w&oh=00_AfZicZmvyy6nPsXYW5uMdRaLzrLaYHGil9rG5jlf3JScpw&oe=68E3AF37"
+                        alt="Madrina">
+                    <p>Madrina: Ana Torres</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mesa de regalos -->
+        <div class="gifts">
+            <h2>Mesa de Regalos</h2>
+            <p>Si deseas acompañarme con un obsequio, aquí te comparto algunas opciones:</p>
+            <a class="btn" href="https://www.amazon.com.mx/hz/wishlist/ls/XXXXXXXX" target="_blank">Amazon</a>
+            <a class="btn" href="https://mesaderegalos.liverpool.com.mx/XXXXXXXX" target="_blank">Liverpool</a>
+            <a class="btn" href="https://palaciodehierro.com/XXXXXXXX" target="_blank">Palacio de Hierro</a>
+        </div>
+    </div>
+
+    <script>
+        // ===== Galería automática =====
+        let galleryIndex = 0;
+        const galleryImgs = document.querySelectorAll("#gallery img");
+        setInterval(() => {
+            galleryImgs[galleryIndex].classList.remove("active");
+            galleryIndex = (galleryIndex + 1) % galleryImgs.length;
+            galleryImgs[galleryIndex].classList.add("active");
+        }, 4000);
+    </script>
+</body>
+
+</html>
