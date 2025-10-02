@@ -127,16 +127,16 @@ h1, h2 {
     align-items: center;
   }
   .card {
-    width: 90%;
+    max-width: max-content;
   }
   .location-card {
-    width: 90%;
+    max-width: max-content;
   }
   .gallery {
-    max-width: 100%;
+    max-width: max-content;
   }
   .btn {
-    width: 80%;
+    max-width: max-content;
     font-size: 16px;
   }
 }
@@ -156,5 +156,6 @@ h1, h2 {
     padding: 10px 20px;
   }
 }
+
 
 
