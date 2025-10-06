@@ -156,6 +156,55 @@ h1, h2 {
     padding: 10px 20px;
   }
 }
+/* Fuente general */
+body {
+  font-family: 'Great Vibes', cursive;
+  color: #b76eff; /* Morado pastel */
+  background: url("img/fondo.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+/* Títulos tipo princesa */
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #a84dee; /* Morado fuerte */
+  text-shadow: 
+    2px 2px 5px #ff9fe7,  /* Sombra rosada brillante */
+    0 0 10px #ffb6f9, 
+    0 0 20px #ffc6ff; 
+  letter-spacing: 1px;
+}
+
+/* Texto normal */
+p {
+  font-family: 'Great Vibes', cursive;
+  color: #e8c6ff;
+  text-shadow: 1px 1px 3px #ffb3ec;
+}
+
+/* Botones */
+.btn {
+  background: linear-gradient(45deg, #d96df0, #a84dee);
+  color: white;
+  border: 2px solid #ffb6f9;
+  text-shadow: 1px 1px 3px #ff9fe7;
+  box-shadow: 0 0 10px #ffb6f9;
+}
+.btn:hover {
+  background: linear-gradient(45deg, #a84dee, #d96df0);
+  box-shadow: 0 0 20px #ffb6f9;
+}
+
+/* Efecto de brillo animado */
+@keyframes sparkle {
+  0% { text-shadow: 0 0 5px #ffb6f9, 0 0 10px #ffb6f9; }
+  50% { text-shadow: 0 0 20px #ffc6ff, 0 0 30px #ffb6f9; }
+  100% { text-shadow: 0 0 5px #ffb6f9, 0 0 10px #ffb6f9; }
+}
+h1, h2 {
+  animation: sparkle 2s infinite ease-in-out;
+}
+
 
 
 
