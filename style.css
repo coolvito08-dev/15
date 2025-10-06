@@ -3,7 +3,7 @@ body {
   margin: 0;
   color: #b76eff; /* Morado pastel */
   background: url("img/fondo.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
+  
   /* Títulos tipo princesa */
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
@@ -18,7 +18,7 @@ h1, h2, h3 {
 /* Texto normal */
 p {
   font-family: 'Great Vibes', cursive;
-  color: #e8c6ff;
+  color: #a84dee; /* Morado fuerte */
   text-shadow: 1px 1px 3px #ffb3ec;
 }
 
@@ -195,4 +195,5 @@ h1, h2 {
     padding: 10px 20px;
   }
 }
+
 
