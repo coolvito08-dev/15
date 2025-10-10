@@ -4,24 +4,7 @@ body {
   color: #b76eff; /* Morado pastel */
   background: url("img/fondo.jpg") no-repeat center center/cover;
   
-  /* Títulos tipo princesa */
-h1, h2, h3 {
-  font-family: 'Great Vibes', cursive;
-  color: #a84dee; /* Morado fuerte */
-  text-shadow: 
-    2px 2px 5px #ff9fe7,  /* Sombra rosada brillante */
-    0 0 10px #ffb6f9, 
-    0 0 20px #ffc6ff; 
-  letter-spacing: 1px;
-}
-
-/* Texto normal */
-p {
-  font-family: 'Great Vibes', cursive;
-  color: #a84dee; /* Morado fuerte */
-  text-shadow: 1px 1px 3px #ffb3ec;
-}
-
+ 
 /* Botones */
 .btn {
   background: linear-gradient(45deg, #d96df0, #a84dee);
@@ -195,5 +178,6 @@ h1, h2 {
     padding: 10px 20px;
   }
 }
+
 
 
