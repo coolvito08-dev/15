@@ -3,29 +3,6 @@ body {
   margin: 0;
   color: #b76eff; /* Morado pastel */
   background: url("img/fondo.jpg") no-repeat center center/cover;
-  
- 
-/* Botones */
-.btn {
-  background: linear-gradient(45deg, #d96df0, #a84dee);
-  color: white;
-  border: 2px solid #ffb6f9;
-  text-shadow: 1px 1px 3px #ff9fe7;
-  box-shadow: 0 0 10px #ffb6f9;
-}
-.btn:hover {
-  background: linear-gradient(45deg, #a84dee, #d96df0);
-  box-shadow: 0 0 20px #ffb6f9;
-}
-
-/* Efecto de brillo animado */
-@keyframes sparkle {
-  0% { text-shadow: 0 0 5px #ffb6f9, 0 0 10px #ffb6f9; }
-  50% { text-shadow: 0 0 20px #ffc6ff, 0 0 30px #ffb6f9; }
-  100% { text-shadow: 0 0 5px #ffb6f9, 0 0 10px #ffb6f9; }
-}
-h1, h2 {
-  animation: sparkle 2s infinite ease-in-out;
 }
 .overlay {
   background: rgba(0,0,0,0.65);
@@ -178,6 +155,7 @@ h1, h2 {
     padding: 10px 20px;
   }
 }
+
 
 
 
